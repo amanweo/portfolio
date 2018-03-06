@@ -3,7 +3,13 @@
         <h4 class="main-head">Latest Updates</h4>    
         <div class="categ-inner">
             <ul class="updates">
-                <li ng-repeat="uplist in categ['updateList']"><h5>{{uplist.upList}}</h5></li>
+                <li ng-repeat="uplist in categ['updateList']">
+                    <h5>{{uplist.upList + ":"}}</h5>
+                    <p><a href="#">{{uplist.trackName}} <span>{{"["+ uplist.artist1 + "]" + ","}}</span></a>
+                        <a href="#">{{uplist.trackName2}} <span>{{"["+ uplist.artist2 + "]" + ","}}</span></a>
+                        <a href="#">{{uplist.trackName3}} <span>{{"["+ uplist.artist3 + "]"}}</span></a>
+                    </p>
+                </li>
             </ul>
         </div>            
     </div>

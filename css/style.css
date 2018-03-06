@@ -57,13 +57,27 @@ input-placeholder, placeholder {
     padding: 10px;
 }
 .categ-inner li {
-    padding: 5px 0;
+    padding: 3px 0;
+}
+.categ-inner li a:hover{
+    color: #3399FF;
 }
 .category-outer ~ .category-outer{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
-
+.updates h5, .updates p{
+    display: inline-block
+}
+.updates h5{
+    color: #009900;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.updates a span{
+    color: #009900;
+    
+}
 
 
 
