@@ -1,0 +1,16 @@
+<div class="main-page" ng-controller="categ">
+    <div class="category-outer">
+        <h4 class="main-head">Latest Updates</h4>    
+        <div class="categ-inner">
+            <ul class="updates">
+                <li ng-repeat="uplist in categ['updateList']"><h5>{{uplist.upList}}</h5></li>
+            </ul>
+        </div>            
+    </div>
+    <div class="category-outer">
+        <h4 class="main-head">Music Zone</h4>
+        <ul class="categ-inner">
+            <li ng-repeat="catlist in categ['category']"><a href="#">{{catlist.categName}}</a></li>
+        </ul>
+    </div>
+</div>

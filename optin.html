@@ -1,0 +1,13 @@
+<div class="main-page">
+<h1>Welcome</h1>
+    <form>
+        <input type="text" placeholder="Search" ng-model="name" style="width: 200px; margin: auto">
+    </form>
+    <br>
+    <br>
+    <p ng-click="orderByMe('sr')">Sort list</p>
+    <ul>
+        <li ng-repeat="list in list | filter:name | orderBy:sortlist">{{list.sr + ' ' + list.name + ' ' + list.lastname}}</li>
+    </ul>
+    
+</div>
