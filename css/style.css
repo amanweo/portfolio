@@ -2,9 +2,10 @@ html,body{
     height: 100%;
 }
 body {
-    color: #555555;
-    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-family: 'Nunito', sans-serif;
     font-weight: 400;
+    font-size: 16px;
 }
 input:focus, select:focus{
     outline: none !important;
@@ -48,39 +49,222 @@ input-placeholder, placeholder {
     color: inherit;
 }
 
-.main-head{
-    color: #fff;
-    background: #3399FF;
-    padding: 10px;
-}
-.categ-inner{
-    padding: 10px;
-}
-.categ-inner li {
-    padding: 3px 0;
-}
-.categ-inner li a:hover{
-    color: #3399FF;
-}
-.category-outer ~ .category-outer{
-    margin-top: 0px;
-}
 
-.updates h5, .updates p{
+.sidebar{
+    width: 300px;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    top: 0;
+    left: 0;
+    background: #999999;
+    color: #fff;
+    box-shadow: inset rgba(0,0,0,0.1) -30px 0 20px;
+}
+.main-img{
+    max-width: 300px;
+}
+.main-img img{
+    max-width: 100%;
+}
+.profile-options li{
+    background: #fff;
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+.profile-options li ~ li{
+    margin-top: 20px;
+}
+.profile-options li p{
+    color: #333;
     display: inline-block
 }
-.updates h5{
-    color: #009900;
-    font-weight: bold;
-    margin-right: 10px;
+.profile-options li span.fa{
+    background: #666666;
+    height: 30px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 28px;
+    width: 40px;
+    position: relative;
+    z-index: 0;
+    margin-right: 20px;
 }
-.updates a span{
-    color: #009900;
+.profile-options li span.fa:after{
+    content: "";
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 30px solid #666;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    z-index: -1;
+}
+.profile-options h4{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+
+
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:25px;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+        width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+}
+
+.skillbar-title span {
+	display:block;
+	padding:0 10px;
+	height:25px;
+	line-height:25px;
+}
+
+.skillbar-bar {
+	height:25px;
+	width:0px;
+	background:#666666;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:25px;
+	line-height:25px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+.html{
+    width: 85%;
+    animation: html ease 2s;
+}
+.css{
+    width: 82%;
+    animation: css ease 2s;
+}
+.bootstrap{
+    width: 80%;
+    animation: bootstrap ease 2s;
+}
+.jquery{
+    width: 70%;
+    animation: jquery ease 2s;
+}
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes css{
+    from{
+        width: 0;
+    }
+    to{
+        width: 82%;
+    }
+}
+@keyframes bootstrap{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+@keyframes jquery{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+
+.main-container{
+    width: calc(100% - 300px);
+    float: right;
+    padding-left: 30px;
+}
+.container-inner{
+    padding: 30px 0;
+    max-width: 800px;
+    width: 100%;
+}
+.information-box strong{
+    min-width: 200px;
+    float: left;
+}
+.information-box strong:after{
+    content: ":";
+    display: block;
+    float: right;
+    margin-right: 15px;
+}
+.information-box p{
     
 }
-
-
-
+.information-box p span{
+    display: block;
+    font-size: 13px;
+}
+h1.name{
+    text-transform: uppercase;
+}
+.bio{
+    margin: 10px 0 20px;
+}
+.courses li{
+    display: inline-flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+.main-heading{
+    display: inline-block;
+    background: #666;
+    color: #fff;
+    padding: 0 20px;
+    min-height: 40px;
+    line-height: 40px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.main-heading:after{
+    content: "";
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 40px solid #666;
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -20px;
+    z-index: -1;
+}
+.information-box li {
+    
+}
 
 
 

@@ -1,22 +1,104 @@
-<div class="main-page" ng-controller="categ">
-    <div class="category-outer">
-        <h4 class="main-head">Latest Updates</h4>    
-        <div class="categ-inner">
-            <ul class="updates">
-                <li ng-repeat="uplist in categ['updateList']">
-                    <h5>{{uplist.upList + ":"}}</h5>
-                    <p><a href="#">{{uplist.trackName}} <span>{{"["+ uplist.artist1 + "]" + ","}}</span></a>
-                        <a href="#">{{uplist.trackName2}} <span>{{"["+ uplist.artist2 + "]" + ","}}</span></a>
-                        <a href="#">{{uplist.trackName3}} <span>{{"["+ uplist.artist3 + "]"}}</span></a>
-                    </p>
-                </li>
-            </ul>
-        </div>            
+<div class="main-page">
+    <div class="sidebar mCustomScrollbar">
+        <div class="sidebar-inner">
+            <div class="main-img">
+                <img src="images/user.jpg">
+            </div>
+            <div class="contact-main">
+                <div class="profile-options">
+                    <h4>Contact Me</h4>
+                    <ul ng-repeat="contact in info['contact']">
+                        <li>
+                            <span class="fa fa-envelope"></span>
+                            <p><a href="mailto:{{contact.email}}">{{contact.email}}</a></p>
+                        </li>
+                        <li>
+                            <span class="fa fa-phone"></span>
+                            <p>{{contact.phone}}</p>
+                        </li>
+                        <li>
+                            <span class="fa fa-map-marker"></span>
+                            <p>{{contact.location}}</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="profile-options">
+                    <h4>Skills</h4>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>HTML5</span></div>
+                        <div class="skillbar-bar html"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>CSS</span></div>
+                        <div class="skillbar-bar css"></div>
+                        <div class="skill-bar-percent">82%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Bootstrap</span></div>
+                        <div class="skillbar-bar bootstrap"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Jquery</span></div>
+                        <div class="skillbar-bar jquery"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Less/Sass</span></div>
+                        <div class="skillbar-bar jquery"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    
+                </div>
+                <div class="profile-options">
+                    <h4>Softwares</h4>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Photoshop</span></div>
+                        <div class="skillbar-bar css"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Dreamweaver</span></div>
+                        <div class="skillbar-bar css"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Illustrator</span></div>
+                        <div class="skillbar-bar jquery"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
     </div>
-    <div class="category-outer">
-        <h4 class="main-head">Music Zone</h4>
-        <ul class="categ-inner">
-            <li ng-repeat="catlist in categ['category']"><a href="#">{{catlist.categName}}</a></li>
-        </ul>
-    </div>
+    
+    <div class="main-container">
+        <div class="container-inner" ng-repeat="infor in info['personal']">
+            <h1 class="name">{{infor.name}}</h1>
+            <p class="bio">{{infor.bio}}</p>
+            <div class="information-box">
+                <h3 class="main-heading">Personal Information</h3>
+                <ul>
+                    <li><strong>Father name</strong><p>{{infor.fname}}</p></li>
+                    <li><strong>Date of Birth</strong><p>{{infor.dob}}</p></li>
+                    <li><strong>Gender</strong><p>{{infor.gender}}</p></li>
+                    <li><strong>Language known</strong><p>{{infor.language}}</p></li>
+                </ul>
+            </div>
+            <div class="information-box" ng-repeat="infor in info['education']">
+                <h3 class="main-heading">Education</h3>
+                <ul class="courses">
+                    <li><strong>2012</strong><p>{{infor.course1}}<span class="sub-head">{{infor.institute1}}</span></p></li>
+                    <li><strong>2015</strong><p>{{infor.course2}}<span class="sub-head">{{infor.institute2}}</span></p></li>
+                    <li><strong>2015</strong><p>{{infor.course3}}<span class="sub-head">{{infor.institute3}}</span></p></li>
+                </ul>
+            </div>
+            
+        </div>        
+    </div>    
+        
+    
 </div>
