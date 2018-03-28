@@ -23,6 +23,9 @@ app.controller('myCtrl', function($scope){
                   education: [
                             {course1: "Bachelor of Computer Applications (BCA)", course2: "Masters of Computer Applications (MCA)", course3: "6 Months professional training", institute1: "Chandigarh Groups Of Colleges Landran", institute2: "Distance Learning (PTU)", institute3: "Morph Academy Chandigarh"  }
                   ],
+                  work: [
+                            {work1: "Web Crawl Technologies Mohali", work2: "Web Experts Online Mohali", position: "Front End Developer"}
+                  ],
                   
                     }
 });

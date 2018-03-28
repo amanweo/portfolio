@@ -22,54 +22,13 @@
                         </li>
                     </ul>
                 </div>
-                <div class="profile-options">
-                    <h4>Skills</h4>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>HTML5</span></div>
-                        <div class="skillbar-bar html"></div>
-                        <div class="skill-bar-percent">85%</div>
-                    </div>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>CSS</span></div>
-                        <div class="skillbar-bar css"></div>
-                        <div class="skill-bar-percent">82%</div>
-                    </div>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>Bootstrap</span></div>
-                        <div class="skillbar-bar bootstrap"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>Jquery</span></div>
-                        <div class="skillbar-bar jquery"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>Less/Sass</span></div>
-                        <div class="skillbar-bar jquery"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div>
-                    
+                <div class="social-info">
+                    <a href="#" class="fb"><span class="fa fa-facebook"></span></a>
+                    <a href="#" class="linkedin"><span class="fa fa-linkedin"></span></a>
+                    <a href="#" class="gp"><span class="fa fa-google-plus"></span></a>
+                    <a href="#" class="pint"><span class="fa fa-pinterest-p"></span></a>
                 </div>
-                <div class="profile-options">
-                    <h4>Softwares</h4>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>Photoshop</span></div>
-                        <div class="skillbar-bar css"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>Dreamweaver</span></div>
-                        <div class="skillbar-bar css"></div>
-                        <div class="skill-bar-percent">80%</div>
-                    </div>
-                    <div class="skillbar clearfix">
-                        <div class="skillbar-title"><span>Illustrator</span></div>
-                        <div class="skillbar-bar jquery"></div>
-                        <div class="skill-bar-percent">70%</div>
-                    </div>
-                    
-                </div>
+               
             </div>
             
         </div>
@@ -96,9 +55,122 @@
                     <li><strong>2015</strong><p>{{infor.course3}}<span class="sub-head">{{infor.institute3}}</span></p></li>
                 </ul>
             </div>
+            <div class="information-box" ng-repeat="infor in info['work']">
+                <h3 class="main-heading">Work Experience</h3>
+                <ul class="courses">
+                    <li><strong>2014 - 2016</strong><p>{{infor.position}}<span class="sub-head">{{infor.work1}}</span></p></li>
+                    <li><strong>2016 to Current</strong><p>{{infor.position}}<span class="sub-head">{{infor.work2}}</span></p></li>
+                </ul>
+            </div>
+            <div class="information-box" ng-repeat="infor in info['education']">
+                <h3 class="main-heading">Skills</h3>
+                 <div class="profile-options">
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>HTML5</span></div>
+                        <div class="skillbar-bar html wow" data-wow-duration="1s" data-wow-delay="0.3s"></div>
+                        <div class="skill-bar-percent">85%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>CSS</span></div>
+                        <div class="skillbar-bar css wow" data-wow-duration="1s" data-wow-delay="0.4s"></div>
+                        <div class="skill-bar-percent">82%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Bootstrap</span></div>
+                        <div class="skillbar-bar bootstrap wow" data-wow-duration="1s" data-wow-delay="0.5s"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Jquery</span></div>
+                        <div class="skillbar-bar jquery wow" data-wow-duration="1s" data-wow-delay="0.6s"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Less/Sass</span></div>
+                        <div class="skillbar-bar jquery wow" data-wow-duration="1s" data-wow-delay="0.7s"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    
+                </div>
+                
+                <h3 class="main-heading">Softwares</h3>
+                <div class="profile-options">
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Photoshop</span></div>
+                        <div class="skillbar-bar css wow" data-wow-duration="1s" data-wow-delay="0.9s"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Dreamweaver</span></div>
+                        <div class="skillbar-bar css wow" data-wow-duration="1s" data-wow-delay="1s"></div>
+                        <div class="skill-bar-percent">80%</div>
+                    </div>
+                    <div class="skillbar clearfix">
+                        <div class="skillbar-title"><span>Illustrator</span></div>
+                        <div class="skillbar-bar jquery wow" data-wow-duration="1s" data-wow-delay="1.1s"></div>
+                        <div class="skill-bar-percent">70%</div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="recent-work">
+                <h3 class="main-heading">Work</h3>
+                <div class="work-outer">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <img src="images/user.jpg">
+                                <div class="work-detail">
+                                    <h1 class="fa fa-share"></h1>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/user.jpg">
+                                <div class="work-detail">
+                                    <h1 class="fa fa-share"></h1>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/user.jpg">
+                                <div class="work-detail">
+                                    <h1 class="fa fa-share"></h1>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/user.jpg">
+                                <div class="work-detail">
+                                    <h1 class="fa fa-share"></h1>
+                                </div>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+            
             
         </div>        
     </div>    
         
     
 </div>
+<script src="js/wow.min.js"></script>
+<script>
+wow = new WOW(
+  {
+  boxClass:     'wow',     
+  animateClass: 'animated', 
+  offset:       0,          
+  mobile:       true,       
+  live:         true        
+}
+)
+wow.init();
+</script>
